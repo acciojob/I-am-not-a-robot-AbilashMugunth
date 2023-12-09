@@ -28,8 +28,8 @@ images.forEach((img) => {
 //appending other stuff
 let h = document.createElement("h3");
 h.id = "h";
-h.innerText =
-  "Please click on the identical tiles to verify that you are not a robot";
+h.innerHTML =
+  "Please click on the identical tiles to verify that you are not a robot.";
 
 let resetBtn = document.createElement("button");
 resetBtn.id = "reset";
@@ -67,7 +67,7 @@ function checkCount() {
     console.log(2);
   } else if (clickCount >= 1) {
     resetBtn.classList.remove("hide");
-	h.classList.add('hide')
+	// h.classList.add('hide')
   }
 }
 
@@ -100,6 +100,6 @@ resetBtn.addEventListener("click", () => {
     image.classList.remove("selected");
   });
 
-	h.classList.remove('hide');	
+	// h.classList.remove('hide');	
   document.querySelector("#para")?.remove();
 });
