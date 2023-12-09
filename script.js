@@ -67,6 +67,7 @@ function checkCount() {
     console.log(2);
   } else if (clickCount >= 1) {
     resetBtn.classList.remove("hide");
+	h.classList.add('hide')
   }
 }
 
@@ -99,5 +100,6 @@ resetBtn.addEventListener("click", () => {
     image.classList.remove("selected");
   });
 
+	h.classList.remove('hide');	
   document.querySelector("#para")?.remove();
 });
