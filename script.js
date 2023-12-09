@@ -27,7 +27,7 @@ images.forEach((img) => {
 
 //appending other stuff
 let h = document.createElement("h3");
-h.classList.add("h");
+h.id = "h";
 h.innerText =
   "Please click on the identical tiles to verify that you are not a robot";
 
